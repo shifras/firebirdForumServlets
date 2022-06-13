@@ -11,10 +11,9 @@ public class Firebird {
 	
 	private Firebird() {
 		try {
-//			Class.forName("com.mysql.cj.jdbc.Driver");
 			Class.forName("org.firebirdsql.jdbc.FBDriver");
 			//please change path to the file according to your local machine. Path must not be relative, but full path
-			this.connection=DriverManager.getConnection("jdbc:firebirdsql://localhost:3050/<full path to the file>/forum.fdb","SYSDBA","masterkey");
+			this.connection=DriverManager.getConnection("jdbc:firebirdsql://localhost:3050//home/pingvinas/forum.fdb","SYSDBA","masterkey");
 		
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();

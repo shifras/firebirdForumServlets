@@ -2,16 +2,13 @@ package lt.bit.dao;
 
 
 import java.sql.*;
-import java.util.LinkedList;
-import java.util.List;
-
+import java.util.*;
 import lt.bit.db.Firebird;
 import lt.bit.models.Message;
 
 public class MessageDao {
 
 	public MessageDao() {
-		
 	}
 	
 	public List<Message> getMessages() {
@@ -32,7 +29,7 @@ public class MessageDao {
 			return messages;
 
 		} catch (SQLException e) {
-			System.out.println("iviko eroras");
+			System.out.println("iviko eroras atvaizduojant zinutes");
 			e.printStackTrace();
 		}
 		return null;

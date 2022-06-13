@@ -1,4 +1,3 @@
-<%@page import="lt.bit.helper.UserManager"%>
 <%@page import="java.util.List"%>
 <%@page import="lt.bit.models.Message"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
@@ -13,15 +12,15 @@
 	<div class="row mt-5" >
 		<div class="col-md-12">
 			<div class="card">
-				<div class="card-header">Zinutes</div>
+				<div class="card-header">Message board</div>
 				<div class="card-body">
 					<table class="table">
 						<thead>
 							<tr>
-								<th>id</th>
-								<th>Kas</th>
-								<th>Kada</th>
-								<th>Turinys</th>
+								<th>Db Id</th>
+								<th>Who</th>
+								<th>When</th>
+								<th>Content</th>
 							</tr>
 						</thead>
 						 
@@ -39,8 +38,8 @@
 					</table>
 					<form class="form form-control" action="" method="POST">
 						<div class="form-group">
-						    <label for="CONTENT">Write new message bellow:</label>
-						    <textarea class="form-control" id="CONTENT" name="CONTENT" rows="4"></textarea>
+						    <label for="CONTENT">What's on your mind?</label>
+						    <textarea class="form-control"name="CONTENT" rows="4"></textarea>
 	  					</div>
 	  					<div class="col-md-12">
 	  						<button class="btn btn-success" type="submit">Post</button>
